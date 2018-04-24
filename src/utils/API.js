@@ -1,6 +1,6 @@
 //API to request data via HTTP
 const api = "http://api.openweathermap.org/data/2.5/";
-const appId = "8711cc1a116c6c8e055372ec458a970d";
+const appId = "07c1cc62291be161f4f69f02a8df9108";
 
 function getUrl(value, typeRequest){
     var url = '';
