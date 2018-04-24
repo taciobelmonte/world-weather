@@ -5,11 +5,11 @@ const appId = "07c1cc62291be161f4f69f02a8df9108";
 function getUrl(value, typeRequest){
     var url = '';
     if(typeRequest === 'cities')
-        url = api+'group?id='+value.toString()+'&appid=' +appId+ '';
+        url = api+'group?id='+value.toString()+'&AppId=' +appId+ '';
     else if( typeRequest === 'forecast')
-        url = api+'forecast?id='+value+'&appid=' +appId+ '';
+        url = api+'forecast?id='+value+'&AppId=' +appId+ '';
     else if(typeRequest === 'city')
-        url = api+'weather?q='+value+'&appid=' +appId+ '';
+        url = api+'weather?q='+value+'&AppId=' +appId+ '';
 
     return url;
 }
