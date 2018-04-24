@@ -1,0 +1,53 @@
+@import "bourbon/bourbon", "neat/neat", "core/normalize", "core/helpers", "core/mixins", "core/variables";
+@import "partials/cols";
+
+@media (max-width: 1200px) {
+
+}
+
+@media (max-width: 992px) {
+  .city{
+    width:30%;
+  }
+  .image-city{
+    height: 200px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .cityDetails h3{
+    font-size:13px;
+    padding:0 10px;
+  }
+  .city{
+    width:48%;
+    position:relative;
+  }
+  .image-city{
+    height: 260px;
+  }
+  .cityDetails .day{
+    width:100%;
+  }
+  .cityDetails{
+    top: -30% !important;
+    margin: 5% auto;
+    position:absolute;
+  }
+}
+
+@media (max-width: 520px) {
+
+  .city{
+    width:98%;
+  }
+}
+
+@media (max-width: 460px) {
+
+}
+
+@media (max-width: 390px) {
+
+}
