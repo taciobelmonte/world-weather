@@ -1,15 +1,15 @@
 //API to request data via HTTP
-const api = "http://api.openweathermap.org/data/2.5/";
+const api = "//api.openweathermap.org/data/2.5/";
 const appId = "07c1cc62291be161f4f69f02a8df9108";
 
 function getUrl(value, typeRequest){
     var url = '';
     if(typeRequest === 'cities')
-        url = api+'group?id='+value.toString()+'&AppId=' +appId+ '';
+        url = api+'group?id='+value.toString()+'&appid=' +appId+ '';
     else if( typeRequest === 'forecast')
-        url = api+'forecast?id='+value+'&AppId=' +appId+ '';
+        url = api+'forecast?id='+value+'&appid=' +appId+ '';
     else if(typeRequest === 'city')
-        url = api+'weather?q='+value+'&AppId=' +appId+ '';
+        url = api+'weather?q='+value+'&appid=' +appId+ '';
 
     return url;
 }
